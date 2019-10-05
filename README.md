@@ -1,2 +1,4 @@
 # Falkner-Skan
- Library for solving the Falkner-Skan equations in Python.
+Quick little library for solving the Falkner-Skan equations in Python.
+
+See https://en.wikipedia.org/wiki/Falkner%E2%80%93Skan_boundary_layer for more information.
