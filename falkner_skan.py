@@ -2,25 +2,19 @@
 # By Peter Sharpe
 
 import casadi as cas
-import matplotlib.pyplot as plt
-import matplotlib.style as style
-import numpy as np
-
-style.use("seaborn")
 
 
 def falkner_skan(
         m,
         eta_edge=7,
         n_points=100,
-        max_iter = 100
+        max_iter=100
 ):
     """
     Solves the Falkner-Skan equation for a given value of m.
     See Wikipedia for reference: https://en.wikipedia.org/wiki/Falkner–Skan_boundary_layer
 
     :param m: power-law exponent of the edge velocity (i.e. u_e(x) = U_inf * x ^ m)
-    :param verbose: boolean about whether you want to print detailed output (for debugging)
     :return: eta, f0, f1, and f2 as a tuple of 1-dimensional ndarrays.
 
     Governing equation:
@@ -42,7 +36,7 @@ def falkner_skan(
 
     opti = cas.Opti()
 
-    eta = np.linspace(0, eta_edge, n_points)
+    eta = cas.linspace(0, eta_edge, n_points)
 
     trapz = lambda x: (x[:-1] + x[1:]) / 2
 
@@ -51,7 +45,7 @@ def falkner_skan(
     f1 = opti.variable(n_points)
     f2 = opti.variable(n_points)
 
-    # Guess
+    # Guess (guess a quadratic velocity profile, integrate and differentiate accordingly)
     opti.set_initial(f0,
                      -eta ** 2 * (eta - 3 * eta_edge) / (3 * eta_edge ** 2)
                      )
@@ -72,7 +66,7 @@ def falkner_skan(
     # ODE
     f3 = -f0 * f2 - beta * (1 - f1 ** 2)
 
-    # Derivative definitions
+    # Derivative definitions (midpoint-method)
     df0 = cas.diff(f0)
     df1 = cas.diff(f1)
     df2 = cas.diff(f2)
@@ -110,16 +104,22 @@ if __name__ == "__main__":
     # Run through a few tests to ensure that these functions are working correctly.
     # Includes all examples in Table 4.1 of Drela's Flight Vehicle Aerodynamics textbook, along with a few others.
     # Then plots all their velocity profiles.
+    import matplotlib.pyplot as plt
+    import matplotlib.style as style
+    import numpy as np
+
+    style.use("seaborn")
+
     from time import time
+
     start = time()
 
     m_tests = [-0.0904, -0.08, -0.05, 0, 0.1, 0.3, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2]
-    colors = plt.cm.rainbow(np.linspace(0,1,len(m_tests)))[::-1]
-    # colors = plt.cm.cividis(np.linspace(0,1,len(m_tests)))[::-1]
+    colors = plt.cm.rainbow(np.linspace(0, 1, len(m_tests)))[::-1]
     for i in range(len(m_tests)):
         m_val = m_tests[i]
         eta, f0, f1, f2 = falkner_skan(m=m_val)
-        plt.plot(f1, eta, label=r"$m = %.2f$" % m_val, color=colors[i], zorder = 3 + len(m_tests) - i)
+        plt.plot(f1, eta, "-", label=r"$m = %.2f$" % m_val, color=colors[i], zorder=3 + len(m_tests) - i)
     plt.xlabel(r"$f'$ ($u/u_e$)")
     plt.ylabel(r"$\eta$ (Nondim. wall distance)")
     plt.title("Falkner-Skan Velocity Profiles")

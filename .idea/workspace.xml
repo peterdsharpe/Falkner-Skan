@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f28c26a2-b1c6-41ad-806e-d17c790f5abd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/falkner_skan_legacy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/find_separating_m.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/falkner_skan.py" beforeDir="false" afterPath="$PROJECT_DIR$/falkner_skan.py" afterDir="false" />
     </list>
@@ -44,25 +44,25 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\GitHub\Falkner-Skan\misc" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\GitHub\Falkner-Skan" />
     </key>
   </component>
   <component name="RunManager" selected="Python.falkner_skan">
-    <configuration name="P3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="boundary_layer_parameters_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Falkner-Skan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boundary_layer_parameters_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,20 +90,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_19" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="find_separating_m" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Falkner-Skan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_19.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/find_separating_m.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,7 +172,7 @@
       <updated>1570225124663</updated>
       <workItem from="1570225126059" duration="32157000" />
       <workItem from="1570547963585" duration="1208000" />
-      <workItem from="1583283295625" duration="2153000" />
+      <workItem from="1583283295625" duration="4491000" />
     </task>
     <servers />
   </component>
