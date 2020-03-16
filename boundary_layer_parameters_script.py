@@ -1,7 +1,15 @@
 from falkner_skan import falkner_skan
 import numpy as np
 import sympy as sp
+# import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
+import matplotlib.style as style
+import plotly.express as px
+import plotly.graph_objects as go
+import dash
+import seaborn as sns
+sns.set(font_scale=1)
+
 
 ### Define constants
 m = 0.0733844181517584  # Exponent of the edge velocity ("a")

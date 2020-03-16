@@ -38,7 +38,11 @@ def falkner_skan(
 
     eta = cas.linspace(0, eta_edge, n_points)
 
-    trapz = lambda x: (x[:-1] + x[1:]) / 2
+    def trapz(x):
+        out = (x[:-1] + x[1:]) / 2
+        # out[0] += x[0] / 2
+        # out[-1] += x[-1] / 2
+        return out
 
     # Vars
     f0 = opti.variable(n_points)
@@ -106,9 +110,10 @@ if __name__ == "__main__":
     # Then plots all their velocity profiles.
     import matplotlib.pyplot as plt
     import matplotlib.style as style
-    import numpy as np
 
     style.use("seaborn")
+
+    import numpy as np
 
     from time import time
 
@@ -126,6 +131,7 @@ if __name__ == "__main__":
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
+    plt.savefig("falkner_skan.svg")
     plt.show()
 
     print("Time Elapsed: %f sec" % (time() - start))
