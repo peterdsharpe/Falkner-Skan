@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f28c26a2-b1c6-41ad-806e-d17c790f5abd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boundary_layer_parameters_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/boundary_layer_parameters_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/falkner_skan.py" beforeDir="false" afterPath="$PROJECT_DIR$/falkner_skan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/falkner_skan.svg" beforeDir="false" afterPath="$PROJECT_DIR$/falkner_skan.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test/onyeador_equations" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="5cc39767-93e1-4fe1-8072-51cd1eace571" />
@@ -26,7 +30,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -45,40 +48,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\GitHub\Falkner-Skan\misc" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\GitHub\Falkner-Skan" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\GitHub\Falkner-Skan\misc" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.falkner_skan">
-    <configuration name="boundary_layer_parameters_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.onyeador_equations">
+    <configuration name="falkner_skan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Falkner-Skan" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boundary_layer_parameters_script.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="falkner_skan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Falkner-Skan" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -108,6 +92,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/find_separating_m.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="onyeador_equations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Falkner-Skan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/onyeador_equations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.falkner_skan" />
-        <item itemvalue="Python.boundary_layer_parameters_script" />
-        <item itemvalue="Python.boundary_layer_parameters_script" />
-        <item itemvalue="Python.falkner_skan" />
+        <item itemvalue="Python.scratch_70" />
+        <item itemvalue="Python.scratch_20" />
+        <item itemvalue="Python.onyeador_equations" />
+        <item itemvalue="Python.find_separating_m" />
         <item itemvalue="Python.falkner_skan" />
       </list>
     </recent_temporary>
@@ -186,6 +192,10 @@
       <workItem from="1583705451435" duration="2719000" />
       <workItem from="1583788929823" duration="222000" />
       <workItem from="1584253377156" duration="1273000" />
+      <workItem from="1584400159227" duration="731000" />
+      <workItem from="1585419219042" duration="1241000" />
+      <workItem from="1587438853292" duration="611000" />
+      <workItem from="1588188458525" duration="3486000" />
     </task>
     <task id="LOCAL-00001" summary="reducing unnecessary dependencies">
       <created>1583299723928</created>
@@ -194,41 +204,49 @@
       <option name="project" value="LOCAL" />
       <updated>1583299723928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="looking at stuff for chelsea's problem">
+      <created>1588197083962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588197083962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reducing unnecessary dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="reducing unnecessary dependencies" />
+    <MESSAGE value="looking at stuff for chelsea's problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="looking at stuff for chelsea's problem" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1583299723063">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="655" y="14" key="CommitChangelistDialog2" timestamp="1588197083401">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583299723063" />
+    <state x="655" y="14" key="CommitChangelistDialog2/3840.-214.1536.816/0.0.2560.1400@0.0.2560.1400" timestamp="1588197083401" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583299726722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583299726722" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Falkner_Skan$falkner_skan.coverage" NAME="falkner_skan Coverage Results" MODIFIED="1570243649900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Falkner_Skan$P3.coverage" NAME="P3 Coverage Results" MODIFIED="1570242746347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Falkner_Skan$falkner_skan.coverage" NAME="falkner_skan Coverage Results" MODIFIED="1570243649900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
